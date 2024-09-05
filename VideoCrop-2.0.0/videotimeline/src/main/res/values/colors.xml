@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black_trans_light">#99262626</color>
+    <color name="video_edit_bg_color">#99000000</color>
+    <color name="text_active_color">#EAFCFF</color>
+    <color name="whole_screen_touch_color">#B324262A</color>
+</resources>

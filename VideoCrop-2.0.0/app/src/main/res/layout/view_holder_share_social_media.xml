@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: view_holder_share_social_media.xml
+  ~ @modified: Aug 14, 2024, 11:15 AM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_holder_constraint_layout"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icon_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_text_view"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundPercent="1.0"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Subtitle3"
+        android:textColor="#7F8C95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_image_view"
+        tools:text="@tools:sample/cities" />
+</androidx.constraintlayout.widget.ConstraintLayout>

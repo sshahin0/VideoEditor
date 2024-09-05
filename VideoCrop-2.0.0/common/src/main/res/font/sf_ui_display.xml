@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: sf_ui_display.xml
+  ~ @modified: May 14, 2024, 02:44 PM
+  -->
+
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        app:font="@font/sf_ui_display_light"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        app:font="@font/sf_ui_display_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="100" />
+    <font
+        app:font="@font/sf_ui_display_light"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+    <font
+        app:font="@font/sf_ui_display_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="200" />
+    <font
+        app:font="@font/sf_ui_display_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        app:font="@font/sf_ui_display_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="300" />
+    <font
+        app:font="@font/sf_ui_display_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        app:font="@font/sf_ui_display_regular_italic"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        app:font="@font/sf_ui_display_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        app:font="@font/sf_ui_display_medium_italic"
+        app:fontStyle="italic"
+        app:fontWeight="500" />
+    <font
+        app:font="@font/sf_ui_display_semi_bold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+    <font
+        app:font="@font/sf_ui_display_semi_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="600" />
+    <font
+        app:font="@font/sf_ui_display_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+    <font
+        app:font="@font/sf_ui_display_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="700" />
+    <font
+        app:font="@font/sf_ui_display_black"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+    <font
+        app:font="@font/sf_ui_display_black_italic"
+        app:fontStyle="italic"
+        app:fontWeight="800" />
+    <font
+        app:font="@font/sf_ui_display_black"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+    <font
+        app:font="@font/sf_ui_display_black_italic"
+        app:fontStyle="italic"
+        app:fontWeight="900" />
+</font-family>

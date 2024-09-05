@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: fragment_gallery_home.xml
+  ~ @modified: Aug 20, 2024, 10:46 AM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.braincraftapps.droid.common.widget.button.IconButton
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:icon="@drawable/ic_settings_24dp"
+        app:iconSize="22dp"
+        app:iconTint="@color/color_on_surface"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar_text_view"
+        app:rippleColor="@android:color/transparent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/toolbar_text_view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/title_select_clips"
+        android:textAppearance="@style/TextAppearance.App.Toolbar"
+        android:textColor="@color/color_on_surface"
+        app:layout_constraintEnd_toStartOf="@id/market_button"
+        app:layout_constraintStart_toEndOf="@id/settings_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.braincraftapps.droid.common.widget.button.IconButton
+        android:id="@+id/market_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:icon="@drawable/ic_market_24dp"
+        app:iconSize="32dp"
+        app:iconTint="@color/color_on_surface"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar_text_view"
+        app:rippleColor="@android:color/transparent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/local_tab_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@id/tab_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_text_view"
+        app:rippleColor="@android:color/transparent">
+
+        <FrameLayout
+            android:id="@+id/local_tab_frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/local_button_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/local_button_text"
+                    style="@style/Widget.App.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:ellipsize="marquee"
+                    android:focusable="false"
+                    android:minWidth="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="0dp"
+                    android:singleLine="true"
+                    android:text="@string/tab_recent"
+                    android:textColor="@color/color_on_surface" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/local_expand_collapse_image_view"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    app:srcCompat="@drawable/ic_expand_more_24dp"
+                    app:tint="@color/color_on_surface" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/local_divider"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginEnd="5dp"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@color/color_accent"
+                app:cardCornerRadius="2dp"
+                tools:visibility="visible" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/tab_divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:dividerColor="@color/color_divider"
+        app:layout_constraintBottom_toBottomOf="@id/local_tab_card_view"
+        app:layout_constraintEnd_toStartOf="@id/stock_video_tab_card_view"
+        app:layout_constraintStart_toEndOf="@id/local_tab_card_view"
+        app:layout_constraintTop_toTopOf="@id/local_tab_card_view" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/stock_video_tab_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tab_divider"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_text_view"
+        app:rippleColor="@android:color/transparent">
+
+        <FrameLayout
+            android:id="@+id/stock_videos_frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/stock_videos_button_text"
+                style="@style/Widget.App.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:minWidth="0dp"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:text="@string/title_stock_videos"
+                android:textColor="@color/color_on_surface" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/stock_videos_divider"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@color/color_accent"
+                app:cardCornerRadius="2dp"
+                tools:visibility="visible" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/view_pager_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:dividerColor="@color/color_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stock_video_tab_card_view" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

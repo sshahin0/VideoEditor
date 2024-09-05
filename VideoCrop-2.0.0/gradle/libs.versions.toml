@@ -1,0 +1,36 @@
+[versions]
+agp = "8.5.0"
+kotlin = "2.0.0"
+google-ksp = "2.0.0-1.0.21"
+google-material = "1.12.0"
+androidx-core = "1.13.1"
+androidx-appcompat = "1.7.0"
+androidx-navigation = "2.7.7"
+braincraftapps-common = "1.0.26"
+mp4compose = "0.0.28"
+leakcanary = "2.14"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.2.1"
+espresso-core = "3.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "google-material" }
+braincraftapps-common = { group = "com.braincraftapps.droid", name = "common", version.ref = "braincraftapps-common" }
+braincraftapps-picker-ui = { group = "com.braincraftapps.droid.picker", name = "ui", version.ref = "braincraftapps-common" }
+mp4compose = { group = "com.braincraftapps.droid", name = "mp4compose", version.ref = "mp4compose" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+leakcanary = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakcanary" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "google-ksp" }
+androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "androidx-navigation" }
+
+[bundles]

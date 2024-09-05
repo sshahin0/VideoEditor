@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: vector_messenger_24dp.xml
+  ~ @modified: Aug 14, 2024, 12:08 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path android:pathData="M12,12m-12,0a12,12 45,1 1,24 0a12,12 45,1 1,-24 0">
+
+        <aapt:attr name="android:fillColor">
+
+            <gradient
+                android:centerX="4.622"
+                android:centerY="23.709"
+                android:gradientRadius="26.138"
+                android:type="radial">
+
+                <item
+                    android:color="#FF0099FF"
+                    android:offset="0" />
+
+                <item
+                    android:color="#FFA033FF"
+                    android:offset="0.61" />
+
+                <item
+                    android:color="#FFFF5280"
+                    android:offset="0.935" />
+
+                <item
+                    android:color="#FFFF7061"
+                    android:offset="1" />
+
+            </gradient>
+
+        </aapt:attr>
+
+    </path>
+
+    <path
+        android:fillColor="#ffffff"
+        android:fillType="evenOdd"
+        android:pathData="m16.198,10.278c0.04,-0.063 0.056,-0.138 0.046,-0.212 -0.01,-0.074 -0.045,-0.142 -0.1,-0.192 -0.055,-0.05 -0.126,-0.08 -0.2,-0.084 -0.074,-0.004 -0.148,0.019 -0.207,0.063 -0.743,0.557 -1.605,1.204 -2.086,1.565 -0.108,0.081 -0.24,0.126 -0.375,0.128 -0.136,0.002 -0.268,-0.04 -0.378,-0.119 -0.408,-0.291 -1.053,-0.752 -1.464,-1.046 -0.253,-0.181 -0.556,-0.278 -0.868,-0.278 -0.146,0 -0.291,0.037 -0.419,0.108 -0.128,0.071 -0.236,0.173 -0.314,0.298l-2.03,3.248c-0.04,0.063 -0.056,0.138 -0.046,0.212 0.01,0.074 0.045,0.142 0.1,0.192 0.055,0.05 0.126,0.08 0.2,0.084 0.074,0.004 0.148,-0.019 0.207,-0.063 0.743,-0.557 1.605,-1.204 2.086,-1.565 0.108,-0.081 0.24,-0.126 0.375,-0.128 0.136,-0.002 0.268,0.04 0.378,0.119 0.408,0.291 1.053,0.752 1.464,1.046 0.253,0.181 0.556,0.278 0.868,0.278 0.146,0 0.291,-0.037 0.419,-0.108 0.128,-0.071 0.236,-0.173 0.314,-0.298zM7.533,16.866C6.743,16.255 6.103,15.472 5.661,14.577 5.218,13.682 4.986,12.697 4.981,11.699 4.981,8.001 8.126,4.999 12,4.999c3.874,0 7.019,3.002 7.019,6.7 0,3.698 -3.145,6.7 -7.019,6.7 -0.627,0.001 -1.252,-0.079 -1.859,-0.238l-1.704,0.781c-0.097,0.045 -0.204,0.064 -0.311,0.056 -0.107,-0.008 -0.21,-0.042 -0.3,-0.099 -0.09,-0.058 -0.164,-0.137 -0.215,-0.231 -0.051,-0.094 -0.078,-0.199 -0.078,-0.306z" />
+
+</vector>

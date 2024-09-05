@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: fragment_pixabay_search.xml
+  ~ @modified: Aug 20, 2024, 11:00 AM
+  -->
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_container_height"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    app:layoutDescription="@xml/fragment_pixabay_search_scene">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/input_layout_card_view"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        app:cardBackgroundColor="#212224"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancel_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="?colorDivider"
+        app:strokeWidth="0.6dp">
+
+        <com.braincraftapps.droid.common.widget.button.IconButton
+            android:id="@+id/search_button"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:icon="@drawable/vector_search_normal_14dp"
+            app:iconTint="#6B747F"
+            app:rippleColor="@android:color/transparent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|start"
+            android:background="@android:color/transparent"
+            android:hint="@string/label_stock_video_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="38dp"
+            android:textAppearance="@style/TextAppearance.App.Subtitle1"
+            android:textColorHint="#6B747F"
+            android:textSize="12sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:minWidth="0dp"
+        android:minHeight="48dp"
+        android:text="@string/button_cancel"
+        android:textAllCaps="false"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@android:color/transparent" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

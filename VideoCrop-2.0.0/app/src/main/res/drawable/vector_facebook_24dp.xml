@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: vector_facebook_24dp.xml
+  ~ @modified: Aug 14, 2024, 12:07 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#1877f2"
+        android:pathData="M12,12m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M16.671,15.469 L17.203,12L13.875,12l0,-2.251c0,-0.949 0.465,-1.874 1.956,-1.874l1.513,0L17.344,4.922c0,0 -1.373,-0.234 -2.686,-0.234 -2.741,0 -4.533,1.661 -4.533,4.669L10.125,12l-3.047,0l0,3.469L10.125,15.469L10.125,23.854C10.736,23.95 11.362,24 12,24c0.638,0 1.264,-0.05 1.875,-0.146L13.875,15.469Z" />
+
+</vector>

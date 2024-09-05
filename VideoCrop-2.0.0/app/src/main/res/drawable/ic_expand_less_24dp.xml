@@ -1,0 +1,26 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: ic_expand_less_24dp.xml
+  ~ @modified: May 26, 2024, 01:46 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="m14.403,5.848c-1.246,-1.51 -3.559,-1.51 -4.805,0l-6.88,8.341c-1.675,2.031 -0.231,5.096 2.403,5.096l13.76,-0c2.633,0 4.078,-3.065 2.403,-5.096z"
+        android:strokeWidth="3.1143" />
+
+</vector>

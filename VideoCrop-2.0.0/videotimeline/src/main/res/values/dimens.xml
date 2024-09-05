@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="frame_image_desired_size">50dp</dimen>
+
+    <dimen name="videoitemlistview_videoitem_width">96dp</dimen>
+    <dimen name="videoitemlistview_joineritem_width">30dp</dimen>
+
+    <dimen name="video_item_width">70dp</dimen>
+</resources>

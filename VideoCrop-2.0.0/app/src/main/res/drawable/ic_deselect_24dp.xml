@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: ic_deselect_24dp.xml
+  ~ @modified: May 27, 2024, 05:14 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <group>
+        <clip-path android:pathData="M-2.545,-2.545L26.545,-2.545L26.545,26.545L-2.545,26.545ZM8.364,11.091c-0.504,0 -0.909,0.405 -0.909,0.909 0,0.504 0.405,0.909 0.909,0.909l7.273,0c0.504,0 0.909,-0.405 0.909,-0.909 0,-0.504 -0.405,-0.909 -0.909,-0.909z" />
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M12,2C17.54,2 22,6.46 22,12 22,17.54 17.54,22 12,22 6.46,22 2,17.54 2,12 2,6.46 6.46,2 12,2Z" />
+    </group>
+
+</vector>

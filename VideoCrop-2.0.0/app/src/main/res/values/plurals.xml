@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: plurals.xml
+  ~ @modified: Aug 21, 2024, 11:00 AM
+  -->
+
+<resources>
+    <plurals name="number_of_clips_selected">
+        <item quantity="zero">%d Clips selected</item>
+        <item quantity="one">%d Clip selected</item>
+        <item quantity="two">%d Clips selected</item>
+        <item quantity="few">%d Clips selected</item>
+        <item quantity="many">%d Clips selected</item>
+        <item quantity="other">%d Clips selected</item>
+    </plurals>
+</resources>

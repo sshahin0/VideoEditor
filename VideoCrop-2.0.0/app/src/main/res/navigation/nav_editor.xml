@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: nav_editor.xml
+  ~ @modified: Aug 14, 2024, 11:21 AM
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_editor"
+    app:startDestination="@id/mainEditorFragment">
+    <fragment
+        android:id="@+id/mainEditorFragment"
+        android:name="com.braincraftapps.cropvideos.fragment.editor.main.MainEditorFragment"
+        tools:layout="@layout/fragment_main_editor">
+
+        <action
+            android:id="@+id/toExportProgressFragment"
+            app:destination="@id/exportProgressFragment"
+            app:enterAnim="@anim/nav_fade_in"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/nav_fade_out"
+            app:popUpTo="@id/mainEditorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exportProgressFragment"
+        android:name="com.braincraftapps.cropvideos.fragment.editor.export.progress.ExportProgressFragment"
+        tools:layout="@layout/fragment_export_progress">
+
+        <action
+            android:id="@+id/toExportShareFragment"
+            app:destination="@id/exportShareFragment"
+            app:enterAnim="@anim/nav_slide_in_top"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/nav_slide_out_bottom"
+            app:popUpTo="@id/exportProgressFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exportShareFragment"
+        android:name="com.braincraftapps.cropvideos.fragment.editor.export.share.ExportShareFragment"
+        tools:layout="@layout/fragment_export_share" />
+</navigation>

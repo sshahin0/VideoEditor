@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: vector_checked_20dp.xml
+  ~ @modified: Aug 13, 2024, 12:47 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:autoMirrored="true"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+
+    <path
+        android:pathData="M4,0.7L16,0.7A3.3,3.3 0,0 1,19.3 4L19.3,16A3.3,3.3 0,0 1,16 19.3L4,19.3A3.3,3.3 0,0 1,0.7 16L0.7,4A3.3,3.3 0,0 1,4 0.7z"
+        android:strokeWidth="1.4"
+        android:strokeColor="#FF000000" />
+
+    <path
+        android:pathData="M5.823,10.288L9.174,13.5L14.177,6.5"
+        android:strokeWidth="1.4"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="round" />
+
+</vector>

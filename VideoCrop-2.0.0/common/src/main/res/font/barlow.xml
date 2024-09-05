@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: barlow.xml
+  ~ @modified: Aug 21, 2024, 01:14 PM
+  -->
+
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        app:font="@font/barlow_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        app:font="@font/barlow_thin_italic"
+        app:fontStyle="italic"
+        app:fontWeight="100" />
+    <font
+        app:font="@font/barlow_extra_light"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+    <font
+        app:font="@font/barlow_extra_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="200" />
+    <font
+        app:font="@font/barlow_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        app:font="@font/barlow_light_italic"
+        app:fontStyle="italic"
+        app:fontWeight="300" />
+    <font
+        app:font="@font/barlow_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        app:font="@font/barlow_italic"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        app:font="@font/barlow_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        app:font="@font/barlow_medium_italic"
+        app:fontStyle="italic"
+        app:fontWeight="500" />
+    <font
+        app:font="@font/barlow_semi_bold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+    <font
+        app:font="@font/barlow_semi_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="600" />
+    <font
+        app:font="@font/barlow_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+    <font
+        app:font="@font/barlow_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="700" />
+    <font
+        app:font="@font/barlow_extra_bold"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+    <font
+        app:font="@font/barlow_extra_bold_italic"
+        app:fontStyle="italic"
+        app:fontWeight="800" />
+    <font
+        app:font="@font/barlow_black"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+    <font
+        app:font="@font/barlow_black_italic"
+        app:fontStyle="italic"
+        app:fontWeight="900" />
+</font-family>

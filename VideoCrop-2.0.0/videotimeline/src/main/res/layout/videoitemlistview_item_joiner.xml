@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/videoitemlistview_joineritem_width"
+    android:layout_height="@dimen/_70sdp">
+
+    <ImageView
+        android:id="@+id/joiner_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_transition_icon"/>
+
+</RelativeLayout>

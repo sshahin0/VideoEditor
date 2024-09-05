@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: nav_gallery.xml
+  ~ @modified: May 26, 2024, 02:32 PM
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gallery"
+    app:startDestination="@id/homeGalleryFragment">
+
+    <fragment
+        android:id="@+id/homeGalleryFragment"
+        android:name="com.braincraftapps.cropvideos.fragment.gallery.HomeGalleryFragment"
+        tools:layout="@layout/fragment_gallery_home" />
+</navigation>

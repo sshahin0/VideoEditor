@@ -1,0 +1,76 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: themes.xml
+  ~ @modified: May 19, 2024, 02:03 PM
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- API specific attributes -->
+    <style name="Base.Theme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Navigation and status bar attributes -->
+        <item name="android:statusBarColor" tools:ignore="NewApi">?colorSurface</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">?colorSurface</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+    </style>
+
+    <!-- Day/Night color attributes -->
+    <style name="Base.Theme.DayNight" parent="Base.Theme">
+        <!-- Common color attributes -->
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/color_accent</item>
+        <item name="colorPrimaryVariant">@color/color_accent</item>
+        <item name="colorSecondary">@color/color_accent</item>
+        <item name="colorSecondaryVariant">@color/color_accent</item>
+        <item name="colorHighEmphasis">@color/color_high_emphasis</item>
+        <item name="colorMediumEmphasis">@color/color_medium_emphasis</item>
+        <item name="android:colorBackground">@color/color_surface</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="colorDisabled">@color/color_disabled</item>
+        <item name="colorDivider">@color/color_divider</item>
+        <item name="colorSelectableItemRipple">@color/color_accent_transparent</item>
+
+        <!-- "On" colors define how text, icons and strokes are colored in relation to the surface -->
+        <!-- on which they appear. -->
+        <item name="colorOnPrimary">@color/color_white</item>
+        <item name="colorOnSecondary">@color/color_white</item>
+        <item name="colorOnBackground">@color/color_on_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnSurfaceInverse">@color/color_high_emphasis</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    </style>
+
+    <!-- App specific attributes -->
+    <style name="Base.Theme.App" parent="Base.Theme.DayNight">
+        <!-- Material shape attributes -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.Dialog.Alert</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.App.Dialog.Alert</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+        <item name="navigationViewStyle">@style/Widget.App.NavigationView</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Surface</item>
+
+        <!-- Control colors -->
+        <item name="android:colorControlNormal">?colorOnSurface</item>
+        <item name="android:colorControlActivated">?colorPrimary</item>
+        <item name="android:colorControlHighlight">?colorSelectableItemRipple</item>
+
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- Top level theme to be used in AndroidManifest.xml -->
+    <style name="Theme.App" parent="Base.Theme.App" />
+</resources>

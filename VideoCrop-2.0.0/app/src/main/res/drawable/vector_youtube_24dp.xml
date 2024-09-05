@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: vector_youtube_24dp.xml
+  ~ @modified: Aug 14, 2024, 12:09 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#ff0000"
+        android:pathData="M12,24C5.374,24 0,18.626 0,12 0,5.374 5.374,0 12,0 18.626,0 24,5.374 24,12 24,18.626 18.626,24 12,24Z" />
+
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M18.119,8.906C17.973,8.352 17.54,7.917 16.99,7.769 15.994,7.5 12.002,7.5 12.002,7.5c0,0 -3.994,0 -4.988,0.269 -0.55,0.148 -0.983,0.583 -1.129,1.137C5.615,9.908 5.615,12 5.615,12c0,0 0,2.092 0.267,3.094 0.146,0.554 0.579,0.988 1.129,1.137C8.008,16.5 12,16.5 12,16.5c0,0 3.994,0 4.989,-0.269 0.55,-0.148 0.983,-0.583 1.129,-1.137C18.385,14.092 18.385,12 18.385,12c0,0 0,-2.092 -0.265,-3.094zM10.694,13.898L10.694,10.102L14.031,12Z" />
+
+</vector>

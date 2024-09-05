@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: arrays.xml
+  ~ @modified: Aug 13, 2024, 12:30 PM
+  -->
+
+<resources>
+    <string-array name="export_resolution">
+        <item>480P</item>
+        <item>720P</item>
+        <item>1080P</item>
+        <item>4K</item>
+    </string-array>
+
+    <string-array name="export_frame_rate">
+        <item>24F</item>
+        <item>25F</item>
+        <item>30F</item>
+        <item>50F</item>
+        <item>60F</item>
+    </string-array>
+</resources>

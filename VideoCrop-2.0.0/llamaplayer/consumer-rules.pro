@@ -1,0 +1,2 @@
+-keep class com.braincraftapps.droid.llamaplayer.** { *; }
+-keep interface com.braincraftapps.droid.llamaplayer.** { *; }

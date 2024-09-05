@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: fragment_export_top_sheet.xml
+  ~ @modified: Aug 14, 2024, 10:59 AM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/export_button"
+        style="@style/TextAppearance.App.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:includeFontPadding="false"
+        android:insetTop="10dp"
+        android:insetBottom="10dp"
+        android:text="@string/button_export"
+        android:textColor="?colorSurface"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/resolution_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_resolution"
+        android:textAppearance="@style/TextAppearance.App.Subtitle1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/export_button" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/resolution_seek_bar"
+        style="@style/Widget.App.IndicatorSeekBar.Export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:isb_max="4"
+        app:isb_min="1"
+        app:isb_tick_texts_array="@array/export_resolution"
+        app:isb_ticks_count="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resolution_text_view"
+        tools:isb_progress="2" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/resolution_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resolution_seek_bar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/frame_rate_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_frame_rate"
+        android:textAppearance="@style/TextAppearance.App.Subtitle1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resolution_divider" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/frame_rate_seek_bar"
+        style="@style/Widget.App.IndicatorSeekBar.Export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:isb_max="5"
+        app:isb_min="1"
+        app:isb_tick_texts_array="@array/export_frame_rate"
+        app:isb_ticks_count="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_rate_text_view"
+        tools:isb_progress="2" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/frame_rate_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_rate_seek_bar" />
+
+    <com.braincraftapps.droid.common.widget.button.IconButton
+        android:id="@+id/smart_hdr_icon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:checkable="true"
+        android:clickable="false"
+        android:focusable="false"
+        app:icon="@drawable/selector_smart_hdr_checkbox"
+        app:iconTint="?colorOnSurface"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_rate_divider"
+        app:rippleColor="@android:color/transparent"
+        app:toggleCheckedStateOnClick="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/smart_hdr_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/label_smart_hdr"
+        android:textAppearance="@style/TextAppearance.App.Button"
+        android:textColor="?colorOnSurface"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/smart_hdr_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/smart_hdr_icon_button"
+        app:layout_constraintTop_toTopOf="@id/smart_hdr_icon_button"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/smart_hdr_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/label_smart_hdr_subtitle"
+        android:textAppearance="@style/TextAppearance.App.Subtitle3"
+        android:textColor="@color/color_medium_emphasis"
+        app:layout_constraintBottom_toBottomOf="@id/smart_hdr_icon_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/smart_hdr_icon_button"
+        app:layout_constraintTop_toBottomOf="@+id/smart_hdr_title" />
+
+    <View
+        android:id="@+id/smart_hdr_check_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/smart_hdr_icon_button"
+        app:layout_constraintEnd_toEndOf="@id/smart_hdr_title"
+        app:layout_constraintStart_toStartOf="@id/smart_hdr_icon_button"
+        app:layout_constraintTop_toTopOf="@id/smart_hdr_icon_button" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/smart_hdr_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smart_hdr_icon_button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/estimated_file_size_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/label_estimated_file_size"
+        android:textAppearance="@style/TextAppearance.App.Subtitle2"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smart_hdr_divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

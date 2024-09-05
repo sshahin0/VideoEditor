@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: styles.xml
+  ~ @modified: Aug 14, 2024, 10:52 AM
+  -->
+
+<resources>
+
+    <style name="Widget.App.IndicatorSeekBar.Export" parent="">
+        <item name="isb_seek_smoothly">true</item>
+        <item name="isb_show_indicator">none</item>
+        <item name="isb_show_tick_marks_type">oval</item>
+        <item name="isb_show_tick_texts">true</item>
+        <item name="isb_thumb_color">@color/export_seekbar_progress</item>
+        <item name="isb_thumb_size">16dp</item>
+        <item name="isb_tick_marks_color">@color/selector_tick_marks_color</item>
+        <item name="isb_tick_marks_size">6dp</item>
+        <item name="isb_tick_texts_color">@color/export_seekbar_text_color</item>
+        <item name="isb_tick_texts_size">10sp</item>
+        <item name="isb_track_background_color">@color/export_seekbar_track_background</item>
+        <item name="isb_track_progress_color">?colorOnSurface</item>
+        <item name="isb_track_rounded_corners">true</item>
+    </style>
+</resources>

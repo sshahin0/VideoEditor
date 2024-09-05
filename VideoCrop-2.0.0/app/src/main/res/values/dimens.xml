@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: dimens.xml
+  ~ @modified: Aug 20, 2024, 12:16 PM
+  -->
+
+<resources>
+    <dimen name="camera_button_bottom_margin">40dp</dimen>
+</resources>

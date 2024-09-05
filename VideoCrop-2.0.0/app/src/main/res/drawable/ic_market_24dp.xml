@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: ic_market_24dp.xml
+  ~ @modified: May 19, 2024, 01:23 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M19.685,9.8729h-0.91a3.821,3.821 0,0 0,-7.547 0h-0.91a2.565,2.565 0,0 0,-2.562 2.563v9.365a2.565,2.565 0,0 0,2.562 2.563h9.365a2.565,2.565 0,0 0,2.562 -2.562L22.2449,12.4388A2.564,2.564 0,0 0,19.685 9.8729ZM12.439,9.8729a2.631,2.631 0,0 1,5.127 0ZM21.061,12.4359v9.365a1.377,1.377 0,0 1,-1.376 1.375h-9.366a1.376,1.376 0,0 1,-1.375 -1.375L8.944,12.4388a1.379,1.379 0,0 1,1.375 -1.378h9.366a1.377,1.377 0,0 1,1.376 1.377Z"
+        android:strokeWidth="0.6"
+        android:strokeColor="#FF000000" />
+</vector>

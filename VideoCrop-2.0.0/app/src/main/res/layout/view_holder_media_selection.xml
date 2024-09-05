@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 - 2024 Brain Craft Ltd. - All Rights Reserved
+  ~
+  ~ This file is a part of Video Crop.
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  ~ Proprietary and confidential.
+  ~
+  ~ @author: shakib@braincraftapps.com
+  ~ @file: view_holder_media_selection.xml
+  ~ @modified: Aug 21, 2024, 01:58 PM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_constraint_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/Theme.FilePicker">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="8dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/type_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="start|bottom"
+        android:background="@drawable/shape_tag_bottom_left"
+        android:minHeight="@dimen/media_tag_height"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="2dp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/image_view"
+        app:layout_constraintStart_toStartOf="@id/image_view"
+        app:srcCompat="@drawable/vector_image_24dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/error_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_tag_top_left_error"
+        android:gravity="center"
+        android:minHeight="@dimen/media_tag_height"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/media_tag_error"
+        android:textAppearance="@style/TextAppearance.Bcl.Subtitle2"
+        android:textColor="?colorOnError"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/image_view"
+        app:layout_constraintTop_toTopOf="@id/image_view"
+        tools:visibility="visible" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackCornerRadius="2dp"
+        app:trackThickness="3dp"
+        tools:indeterminate="false"
+        tools:progress="70"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/remove_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="2dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_selection_remove_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
